@@ -33,7 +33,7 @@ jobs:
       run: pipx install strix-agent
     - name: Run Strix
       env:
-          STRIX_LLM: "openai/gpt-5.1"
+          STRIX_LLM: "openai/gpt-5"
           LLM_API_KEY: ${{ secrets.OPENAI_KEY }}
       run: strix -n -t ./
     - name: Upload jar artifact
